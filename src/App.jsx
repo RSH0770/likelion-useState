@@ -1,8 +1,8 @@
 import React from "react";
-import Counter from "./Counter";
+import TodoList from "./TodoList";
 
 const App = () => {
-  return <Counter />;
+  return <TodoList />;
 };
 
 export default App;

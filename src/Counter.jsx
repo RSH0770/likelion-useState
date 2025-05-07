@@ -4,7 +4,9 @@ const Counter = () => {
   const [count, setCount] = useState(0);
 
   const handleIncrease = () => {
-    setCount((prev) => prev + 1); // 기존 prev 값에 1을 더한 값을 prev로 초기화
+    setCount((prev) => prev + 1);
+    // 기존 prev 값에 1을 더한 값을 prev로 초기화
+    // 가장 최신의 이전 값(prev)를 참조하여 사용
   };
 
   const handleDecrease = () => {
@@ -14,6 +16,7 @@ const Counter = () => {
   const handleReset = () => {
     setCount((prev) => 0);
     // setCount(0);으로도 설정 가능!
+    // count = 10;과 같은 방식으로는 상태가 수정되지 않음!
   };
 
   const btnStyle =
